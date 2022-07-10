@@ -2,28 +2,28 @@
 
 To create your first Spring Boot Webapp (named, eLibrary), do the following steps:
 
-1.	If you do not already have one, Create a new empty folder (directory) to serve as your project workspace (e.g. name it, workspace-eclipse).
-2.	Launch-open your Eclipse IDE ( or some other preferred IDE tool of your choice, such as STS (Spring Tool Suite) on to the workspace.
-3.	If using Eclipse and if your Eclipse IDE does not already have it, install the Spring Tools 4 plugin for Eclipse, by doing the following:
+**1.**	If you do not already have one, Create a new empty folder (directory) to serve as your project workspace (e.g. name it, workspace-eclipse).
+**2.**	Launch-open your Eclipse IDE ( or some other preferred IDE tool of your choice, such as STS (Spring Tool Suite) on to the workspace.
+**3.**	If using Eclipse and if your Eclipse IDE does not already have it, install the Spring Tools 4 plugin for Eclipse, by doing the following:
       3.1.	In Eclipse, Select the Help -> Eclipse Marketplace menu item
       3.2.	In the "Find" text field under the Search tab, enter the text - "Spring Tools 4" and click on the "Go" button, to search for the plugin.
       3.3.	Click on the "Install" button for the Spring Tools 4 plugin item found, in the search result. And when the plugin is successfully installed, restart Eclipse when prompted.
-4.	In Eclipse or STS, click on File -> New menu and select, "Spring Starter Project".
-5.	Fill-in the project details as shown below and click "Next":
+**4.**	In Eclipse or STS, click on File -> New menu and select, "Spring Starter Project".
+**5.**	Fill-in the project details as shown below and click "Next":
 
 
-6.	For the project Dependencies, select the 2 items (Web and Thymeleaf), as shown below:
+**6.**	For the project Dependencies, select the 2 items (Web and Thymeleaf), as shown below:
 
-7.	On clicking "Finish", the generated Spring Boot webapp project should show-up within your Eclipse as can be seen below:
+**7.**	On clicking "Finish", the generated Spring Boot webapp project should show-up within your Eclipse as can be seen below:
 
-8.	To run (i.e. execute) the project in Eclipse, simply right-click on the project, go to "Run As" and select "Spring Boot App".
-9.	The project is then executed and the embedded tomcat engine is started on the default port number, 8080, as shown below:
+**8.**	To run (i.e. execute) the project in Eclipse, simply right-click on the project, go to "Run As" and select "Spring Boot App".
+**9.**	The project is then executed and the embedded tomcat engine is started on the default port number, 8080, as shown below:
 
-10.	However, opening a web browser and navigating to the url - http://localhost:8080/, produces a Whitelabel Error page with status code, 404. This is because there is no resource (e.g. a view template resource, like a webpage) available at that url, yet. Therefore, to enable a webpage (e.g. our eLibrary web application's homepage) to be displayed, do the following:
-       10.1.	In the IDE, go to the Project Explorer, expand/open the "src/main/resources" folder.
-       10.2.	Right-click on the "templates" sub-folder and select "New -> Folder" and add a new folder named, say, home.
-       10.3.	Right-click on this new "home" folder and select "New -> Other" and expand the Web folder and select "HTML File" to create/add a new HTML file. Click "Next" and name the file, index.html. Click "Next" again, select the "HTML 5" template and click "Finish".
-       10.4.	Select and delete the entire generated HTML markup content of the file and replace it with the html markup content provided below and save the file:
+**10.**	However, opening a web browser and navigating to the url - http://localhost:8080/, produces a Whitelabel Error page with status code, 404. This is because there is no resource (e.g. a view template resource, like a webpage) available at that url, yet. Therefore, to enable a webpage (e.g. our eLibrary web application's homepage) to be displayed, do the following:
+       **10.1.**	In the IDE, go to the Project Explorer, expand/open the "src/main/resources" folder.
+       **10.2.**	Right-click on the "templates" sub-folder and select "New -> Folder" and add a new folder named, say, home.
+       **10.3.**	Right-click on this new "home" folder and select "New -> Other" and expand the Web folder and select "HTML File" to create/add a new HTML file. Click "Next" and name the file, index.html. Click "Next" again, select the "HTML 5" template and click "Finish".
+       **10.4.**	Select and delete the entire generated HTML markup content of the file and replace it with the html markup content provided below and save the file:
 ```<!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
@@ -95,13 +95,14 @@ To create your first Spring Boot Webapp (named, eLibrary), do the following step
 </body>
 </html>
 ```
-10.5.	In the Project Explorer, expand/open the "src/main/java" folder; right-click on the package named, "edu.mum.cs.cs425.demowebapps.elibrary" and select "New -> Package" and create a new (sub)package named, edu.mum.cs.cs425.demowebapps.elibrary.controller.
-10.6.	Right-click on the "controller" (sub)package, select "New -> Class" and add a Java class named, HomePageController and click "Finish".
-10.7.	Add the couple of import statements, annotations and the one method (named, displayHomePage) into the HomePageController class, as shown below and save the file:
 
-10.8.	Now, re-run the project and when the embedded tomcat engine has started, simply access the elibrary webapp by opening your browser to the url, http://localhost:8080/ (or http://localhost:8080/elibrary or http://localhost:8080/elibrary/home). The elibrary web application's home page should be displayed as shown below:
+**10.5.**	In the Project Explorer, expand/open the "src/main/java" folder; right-click on the package named, "edu.mum.cs.cs425.demowebapps.elibrary" and select "New -> Package" and create a new (sub)package named, edu.mum.cs.cs425.demowebapps.elibrary.controller.
+**10.6.**	Right-click on the "controller" (sub)package, select "New -> Class" and add a Java class named, HomePageController and click "Finish".
+**10.7.**	Add the couple of import statements, annotations and the one method (named, displayHomePage) into the HomePageController class, as shown below and save the file:
 
-11.	If you got this home page displayed, then Congratulations! You've successfully created a web application using Spring Framework version 5.x.x, with Spring Boot 2.x.x and Thymeleaf 3.x.x.
-12.	The End!!!
+**10.8.**	Now, re-run the project and when the embedded tomcat engine has started, simply access the elibrary webapp by opening your browser to the url, http://localhost:8080/ (or http://localhost:8080/elibrary or http://localhost:8080/elibrary/home). The elibrary web application's home page should be displayed as shown below:
+
+**11.**	If you got this home page displayed, then Congratulations! You've successfully created a web application using Spring Framework version 5.x.x, with Spring Boot 2.x.x and Thymeleaf 3.x.x.
+**12.**	The End!!!
 
 ## Screenshot
